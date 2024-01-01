@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2076007791, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: Stay_TheKidLaroi
+  m_EditorClassIdentifier: 
+  mSourceClip: {fileID: 8300000, guid: abf174ee6327b90468e6c46e62e96495, type: 3}
+  mAudioFilePath: 
+  mSampleRate: 44100
+  mIgnoreLatencyOffset: 0
+  mTempoSections:
+  - sectionName: Music
+    startSample: 0
+    samplesPerBeat: 15564.70588235294
+    beatsPerMeasure: 4
+    bStartNewMeasure: 1
+  mTracks:
+  - {fileID: 11400000, guid: 7388863574abfc849b04a969b9d2f79e, type: 2}
+  - {fileID: 11400000, guid: ed1b39721007bdc4ab1a2b5fb179498b, type: 2}
+  - {fileID: 11400000, guid: 0954a1c2ca2b8954b885a76298fc49fe, type: 2}
+  - {fileID: 11400000, guid: a69d708cdd467a443ba97da3d47692fd, type: 2}
+  - {fileID: 11400000, guid: 2f59f3919bcfe3946a9152bed2160516, type: 2}
+  - {fileID: 11400000, guid: 3391b5766a65e0c47ac8360b09274d4c, type: 2}

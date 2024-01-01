@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/Scenes/song1_stay/stay_changecolor.unity
+    guid: e021f0fe5e95a344cae404cb8da18f24
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/Scenes/song1_stay/stay_nochangecolor.unity
+    guid: 7970bafe77131154598766c81ba5fe90
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/Scenes/song2_countingstars/counting_changecolor.unity
+    guid: 9aa86c0e19202c64cac5794481cc532a
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/Scenes/song2_countingstars/counting_nochangecolor.unity
+    guid: c3fe56f52b873c645aba57bd9fdb558e
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/Scenes/song3_PartyOnMyMind/party_changecolor.unity
+    guid: ee077bba79f323f4283c6f951421b309
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/Scenes/song3_PartyOnMyMind/party_nochangecolor.unity
+    guid: 37812a565c9c71a4fb708092e315785f
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/Scenes/song4_showdown/show_nochangecolor.unity
+    guid: 20b0648a1af2b5147babb668ba262f1f
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/Scenes/song4_showdown/show_changecolor.unity
+    guid: 4c3f91619b90f0e40bab37513f68a70a
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
+      type: 2}
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: b89b1095c82afcd408909f6ffa8a2862,
+      type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba,
+      type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 9bec1ce6a03ccba4b9a8215241b32e63,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: a49cadc1a815591479693b955ccf08c1,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a4c68ca72a83449f938d669337cb305,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a9a6963505ddf7f4d886008c6dc86122,
+      type: 2}

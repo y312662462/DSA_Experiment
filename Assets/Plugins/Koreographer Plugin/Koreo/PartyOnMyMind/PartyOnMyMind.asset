@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2076007791, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: PartyOnMyMind
+  m_EditorClassIdentifier: 
+  mSourceClip: {fileID: 8300000, guid: 2175f91546ee3a549b0b6438805a3541, type: 3}
+  mAudioFilePath: 
+  mSampleRate: 44100
+  mIgnoreLatencyOffset: 0
+  mTempoSections:
+  - sectionName: Music
+    startSample: 0
+    samplesPerBeat: 21688.524590163935
+    beatsPerMeasure: 4
+    bStartNewMeasure: 1
+  mTracks:
+  - {fileID: 11400000, guid: 587dcb1de4d944646bc79c3cfb577dc1, type: 2}
+  - {fileID: 11400000, guid: d3a7de56b0903e945ae1be4e2f5ef5c0, type: 2}
+  - {fileID: 11400000, guid: b23c2c1b79ba62f4fa0a1b229483a965, type: 2}
+  - {fileID: 11400000, guid: 2180b02cc533aee4f9111e182f0a85c6, type: 2}
+  - {fileID: 11400000, guid: fd53dd7be49a1ab448279c5c600d0c4c, type: 2}
+  - {fileID: 11400000, guid: 127597fdcc200ad4b9cd53880355fda2, type: 2}

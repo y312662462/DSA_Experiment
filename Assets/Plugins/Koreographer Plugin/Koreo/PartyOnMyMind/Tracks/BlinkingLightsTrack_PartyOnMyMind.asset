@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: BlinkingLightsTrack_PartyOnMyMind
+  m_EditorClassIdentifier: 
+  mEventID: BlinkingLightsTrack_PartyOnMyMind
+  mEventList:
+  - mStartSample: 1192868
+    mEndSample: 1192868
+  - mStartSample: 1453131
+    mEndSample: 1453131
+  - mStartSample: 1973655
+    mEndSample: 1973655
+  - mStartSample: 2147163
+    mEndSample: 2147163
+  - mStartSample: 2667688
+    mEndSample: 2667688
+  - mStartSample: 2754442
+    mEndSample: 2754442
+  - mStartSample: 4142508
+    mEndSample: 4142508
+  - mStartSample: 4229262
+    mEndSample: 4229262
+  - mStartSample: 4272639
+    mEndSample: 4272639
+  - mStartSample: 4316016
+    mEndSample: 4316016
+  - mStartSample: 4359393
+    mEndSample: 4359393
+  - mStartSample: 4402770
+    mEndSample: 4402770
+  - mStartSample: 4836540
+    mEndSample: 4836540
+  - mStartSample: 4923295
+    mEndSample: 4923295
+  - mStartSample: 5226934
+    mEndSample: 5226934
+  - mStartSample: 5270311
+    mEndSample: 5270311
+  - mStartSample: 5530573
+    mEndSample: 5530573
+  - mStartSample: 5617327
+    mEndSample: 5617327
+  - mStartSample: 6267983
+    mEndSample: 6267983
+  - mStartSample: 6398114
+    mEndSample: 6398114
+  - mStartSample: 6918639
+    mEndSample: 6918639
+  - mStartSample: 7092147
+    mEndSample: 7092147
+  - mStartSample: 7612672
+    mEndSample: 7612672
+  - mStartSample: 7699426
+    mEndSample: 7699426
+  - mStartSample: 9456196
+    mEndSample: 9456196
+  _SerializedPayloadTypes: []
+  _ColorPayloads: []
+  _ColorPayloadIdxs: 
+  _CurvePayloads: []
+  _CurvePayloadIdxs: 
+  _FloatPayloads: []
+  _FloatPayloadIdxs: 
+  _GradientPayloads: []
+  _GradientPayloadIdxs: 
+  _IntPayloads: []
+  _IntPayloadIdxs: 
+  _SpectrumPayloads: []
+  _SpectrumPayloadIdxs: 
+  _TextPayloads: []
+  _TextPayloadIdxs: 
