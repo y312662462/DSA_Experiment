@@ -19,7 +19,7 @@ public class receive_eeg : MonoBehaviour
     private static receive_eeg instance;
     public static receive_eeg Instance
     {
-        get{return instance;}
+        get { return instance; }
     }
 
     myListener mylistener;
@@ -27,7 +27,7 @@ public class receive_eeg : MonoBehaviour
     // string TARGET_MAC = "98d863398764";
     string TARGET_MAC = "f0fe6bd409a4";
 
-    public static FusiHeadband headband ;
+    public static FusiHeadband headband;
 
 
     static List<string> attention_history = new List<string>();
@@ -44,8 +44,9 @@ public class receive_eeg : MonoBehaviour
 
     public string participantsName;
 
-    public int AttentionLevel{
-        get {return attentionLevel;}
+    public int AttentionLevel
+    {
+        get { return attentionLevel; }
     }
 
     private double attention = 0;
@@ -67,7 +68,7 @@ public class receive_eeg : MonoBehaviour
 
         //创建表 设置表名
         dt = new DataTable(participantsName + "brain_wave_data");
-        filePath = Application.streamingAssetsPath + "\\"+ participantsName + "brain_wave_data.csv";
+        filePath = Application.streamingAssetsPath + "\\" + participantsName + "brain_wave_data.csv";
         mylistener = new myListener();
         StartCoroutine(SearchDevice());
     }
@@ -176,9 +177,9 @@ public class receive_eeg : MonoBehaviour
                 attention_level = 4;
             }*/
 
-            if (attention < 50)
+            if (attention < 60)
                 attention_level = 1;
-            else if (attention >= 50)
+            else if (attention >= 60)
                 attention_level = 2;
             receive_eeg.Instance.attentionLevel = attention_level;
             receive_eeg.Instance.attention = attention;
@@ -251,24 +252,24 @@ public class receive_eeg : MonoBehaviour
         }
 
     }
-/*    public static void PressD1toLoadLevel()
-    {
-        if (Input.GetKeyUp(KeyCode.F1))
+    /*    public static void PressD1toLoadLevel()
         {
-            if (headband != null)
+            if (Input.GetKeyUp(KeyCode.F1))
             {
-                headband.Disconnect();
-                Debug.Log("Headband disconnected succeed");
+                if (headband != null)
+                {
+                    headband.Disconnect();
+                    Debug.Log("Headband disconnected succeed");
+                }
+
+                Scene currentScene = SceneManager.GetActiveScene();
+                if (currentScene.name.Equals("changeColor"))
+                    Application.LoadLevel("nochangeColor");
+                else
+                    Application.LoadLevel("changeColor");
             }
 
-            Scene currentScene = SceneManager.GetActiveScene();
-            if (currentScene.name.Equals("changeColor"))
-                Application.LoadLevel("nochangeColor");
-            else
-                Application.LoadLevel("changeColor");
-        }
-
-    }*/
+        }*/
 
     // 将数据写入到CSV文件中
     public static void SaveCsv(string filePath, DataTable dt)

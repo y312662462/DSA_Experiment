@@ -43,7 +43,7 @@ public class ScoreManager : MonoBehaviour
     public int pulishSpawns;
     public bool TScore;
     public float timeWin;
-    public bool beginScore;        
+    public bool beginScore;
     public float totalScore;
     public float scoreRate;
     public int tScoreSpawn;
@@ -63,23 +63,23 @@ public class ScoreManager : MonoBehaviour
 
     [HideInInspector] public Animator animator;
 
-    private Queue<int> scoreQ;
-    public int lastGradScore;
+    private Queue<float> scoreQ;
+    public float lastGradScore;
 
 
 
     void Start()
     {
-        
-        int length = (int)(timeWin / intev); 
+
+        int length = (int)(timeWin / intev);
         beginScore = false;
         animator = scoreText.transform.parent.GetComponent<Animator>();
-        scoreQ = new Queue<int>(length);            
+        scoreQ = new Queue<float>(length);
         for (int i = 0; i < length; i++)
-            scoreQ.Enqueue(0);                      
+            scoreQ.Enqueue(0);
         //Debug.Log("len" + scoreQ.Count);
-        InvokeRepeating("wirteScore", 1f, intev);  
-      
+        InvokeRepeating("wirteScore", 1f, intev);
+
     }
 
     void Update()
@@ -91,9 +91,10 @@ public class ScoreManager : MonoBehaviour
         tScoreSpawn = totalSpawns - pulishSpawns;
     }
 
+    //2.5S 更新一次
     public void wirteScore()
     {
-        if(beginScore)
+        if (beginScore)
         {
             intevTotalSpawn = totalSpawns - lastTotalSpawn;
             intevScoreSpawn = tScoreSpawn - lastScoreSpawn;
@@ -101,14 +102,14 @@ public class ScoreManager : MonoBehaviour
             lastScoreSpawn = tScoreSpawn;
             lastTotalSpawn = totalSpawns;
             scoreQ.Dequeue();
-            if (currentScore - scoreQ.Peek() <= lastGradScore)
+            if (scoreRate - scoreQ.Peek() <= lastGradScore)
                 TScore = false;
             else
             {
                 TScore = true;
             }
-            lastGradScore = currentScore - scoreQ.Peek();
-            scoreQ.Enqueue(currentScore);
+            lastGradScore = scoreRate - scoreQ.Peek();
+            scoreQ.Enqueue(scoreRate);
             Debug.Log("TScore：" + TScore);
         }
 
@@ -152,5 +153,5 @@ public class ScoreManager : MonoBehaviour
         tHitPunishSpawn++;
     }
 
-    
+
 }
